@@ -1,0 +1,8 @@
+# Dependency directories
+node_modules
+
+# Cypress
+*.mp4
+/cypress/screenshots
+cypress/reports
+testReport*
