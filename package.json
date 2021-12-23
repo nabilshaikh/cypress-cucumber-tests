@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "lint": "eslint --fix --ext .js,.vue,.ts --ignore-path .gitignore ."
   },
   "repository": {
     "type": "git",
@@ -41,6 +44,8 @@
     "eslint-plugin-cypress": "^2.11.2"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "commonPath": "cypress/step-definitions/",
+    "stepDefinitions": "cypress/"
   }
 }
