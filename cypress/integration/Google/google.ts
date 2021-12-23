@@ -1,8 +1,9 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /// <reference types="cypress" />
 
-import { Given } from "cypress-cucumber-preprocessor/steps";
+import { Given } from 'cypress-cucumber-preprocessor/steps';
 
-const url = 'https://google.com'
+const url = 'https://google.com';
 Given('I open Google page', () => {
-  cy.visit(url)
+  cy.visit(url);
 });
