@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "strict": true,
+    "baseUrl": "./node_modules",
+    "paths": {
+      "~/*" : ["./*"]
+    },
+    "target": "es5",
+    "lib": ["es5", "dom"],
+    "types": ["cypress"],
+    "rootDir": "./",
+    "outDir": "./out",
+    "esModuleInterop":true
+  },
+  "include": [
+    "**/*.ts", "cypress/plugins/index.js", "cypress/support/index.js"
+  ]
+}
