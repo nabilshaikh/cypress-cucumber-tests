@@ -6,6 +6,10 @@ import { Given } from 'cypress-cucumber-preprocessor/steps';
   * @desc Generic steps
 */
 
+beforeEach(() => {
+  indexedDB.deleteDatabase('WalletAppDB');
+});
+
 Given('User visits {string} on {string} device', (page: string, device) => {
   switch (device) {
     case 'mobile':
